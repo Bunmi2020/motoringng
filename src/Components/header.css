@@ -1,0 +1,238 @@
+
+.App-header {
+    background: #F0FAFE;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 10px;
+    
+    
+   padding: 0% 10%;
+   padding-bottom: 52px;
+    
+  }
+
+.App-nav {
+  z-index: 7;
+
+display: flex;
+flex-direction: row;
+flex-grow: 1;
+padding:  10px;
+width: 90%;
+top: 0%;
+
+max-height: 15vw;
+}
+
+
+
+.App-logo {
+   
+  margin-left: 0%;
+margin-right: auto;
+  
+
+padding-left: 2%;
+  
+  }
+
+  .App-logo img {
+    min-width: 5vw;
+    max-width: 120px;
+    margin: auto;
+  }
+
+  .App-header .App-menu {
+    display: flex;
+flex-direction: row;
+
+gap: 5vw;
+flex-wrap: no-wrap;
+height: 24px;
+margin-left: auto;
+margin-right: 0%;
+/* Inside auto layout */
+
+  }
+
+  .App-nav li {
+  
+    top: 0%;
+    bottom: 0%;
+    min-width: 5vw;
+    max-width: 7vw;
+    /* button text */
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    list-style: none;
+    text-align: center;
+
+    /* primary/blue */
+    min-width: max-content;
+    color: #262C71;
+
+  }
+
+  
+  
+  .mobile-menu-button {
+    display: none;
+  }
+
+
+  @media (max-width: 650px) {
+
+    .App-header {
+      padding: 0%;
+      top:0%;
+      z-index: 7;
+       min-height: 15vw;
+    }
+
+    
+
+    .App-nav .App-logo img {
+      width: 100px;
+      
+
+    }
+
+    .App-header .App-nav {
+      background-color: white;
+      width: 100%;
+      position: fixed;
+      top: 0%;
+      padding: 0%;
+    }
+
+    .App-nav .App-logo  {
+      max-width: 130px;
+      padding-left: 20px;
+
+    }
+
+    .mobile-menu-button {
+      display: flex;
+      flex-direction: row;
+    
+    margin: auto 0%;
+    gap: 5vw;
+    flex-wrap: no-wrap;
+    height: 24px;
+    margin-left: auto;
+    margin-right: 0%;
+    background: none;
+
+    }
+
+    .App-menu .desktop-menu {
+      display: none;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      z-index: 9;
+    }
+
+
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    top: 13vw;
+    width: 100%;
+
+    gap: 20px;
+    text-align: left;
+    flex-wrap: no-wrap;
+    padding: 10px;
+    min-width: 350px;
+    max-width: 650px;
+    background: #f7f7f7;
+      }
+
+   .App-header .mobile-menu a {
+        cursor: pointer;
+        color: #121212;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      
+      .App-header .mobile-menu li {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        margin: 5%;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+        
+        text-align: left;
+        list-style: none;
+      }
+
+  .App-menu .desktop-menu link{
+    cursor: pointer;
+    color: #121212;
+    text-decoration: none;
+    
+  }
+
+  .App-header a {
+    color: #121212;
+    text-decoration: none;
+  }
+  
+  
+    
+  
+   .App-menu {
+    display: flex;
+    flex-direction: row;
+  
+  margin: auto 0%;
+  gap: 5vw;
+  flex-wrap: no-wrap;
+  height: 24px;
+  margin-left: auto;
+  margin-right: 0%;
+  padding-right: 10px;
+  
+  
+    }
+
+    .desktop-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 63px;
+      
+      max-width: 50vw;
+      height: 24px;
+    }
+    
+  
+  
+
+
+ 
+  
+  /* @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  

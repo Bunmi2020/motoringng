@@ -1,0 +1,86 @@
+
+ .reputation {
+    
+ background: #F0FAFE;
+    
+  }
+
+  .trust-container {
+    display: block;
+    
+    padding: 1%;
+    margin: auto;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    
+  }
+
+  
+
+  .trust-container h3 {
+    /* How it works? */
+    min-width: 159px;
+    max-width: 244px;
+    height: 36px;
+    background: #262c710d;
+    padding: 1%;
+    border-radius: 10px;
+    
+    /* Header/3 */
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    
+    
+    /* primary/blue */
+    
+    color: #262C71;
+
+margin: auto;
+margin-bottom: 20px;
+margin-top: 20px;
+
+
+  }
+  
+ 
+  .trust img {
+    max-width: 150px;
+    margin: 0px 40px;
+    
+    
+  }
+
+
+
+  .trust-body {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    gap: 20px;
+
+  }
+
+  .trust {
+    position: relative;
+    margin-bottom: 1%;
+    margin-top: auto;
+    
+    
+  }
+
+  @media  (max-width: 650) {
+
+    .trust-container h3 {
+    margin-top: 25px;
+    }
+}
+
+ 

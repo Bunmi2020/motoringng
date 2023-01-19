@@ -1,0 +1,93 @@
+
+  .services-icon, .services-header, .services-text {
+    
+    padding: auto;
+    padding-bottom: 10%;
+    margin: auto;
+    
+  }
+
+  .work-steps {
+    width: 80%;
+    padding: 1%;
+    margin: auto;
+    margin-top: 2%;
+    
+  }
+
+  .work-steps h3 {
+    /* How it works? */
+    width: 159px;
+    height: 36px;
+    background-color: #262c710d;
+    padding: 1%;
+    border-radius: 10px;
+    
+    /* Header/3 */
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    
+    
+    /* primary/blue */
+    
+    color: #262C71;
+    
+    margin: auto;
+
+
+  }
+  
+ 
+  .work-steps-body .services-icon {
+    min-width: 170px;
+    max-width: 200px;
+    margin-bottom: 0%;
+    max-height: 141px;
+  }
+
+ 
+  .services-header {
+    width: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120%;
+    margin-left: 40px;
+padding: 3%;
+margin-bottom: 5%;
+margin-top: 0%;
+
+  }
+
+  
+
+  .services-text {
+    width: 70%;
+  }
+
+  .work-steps-body {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    margin: auto;
+
+  }
+
+  .step1, .step2, .step3 {
+    display: block;
+  }
+
+  
+  @media  (max-width: 650) {
+
+    .work-steps {
+    padding-top: 19vw;
+    }
+}
+

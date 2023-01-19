@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: block;
+}
+
+
+@media (max-width: 650px) {
+  
+}
+
+p {
+  /* Body/Regular */
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+
+h3 {
+   /* Header/2 */
+        
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 150%;
+   /* or 48px */
+   
+}
+
+a {
+  text-decoration: none;
+  color: #121212;;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}

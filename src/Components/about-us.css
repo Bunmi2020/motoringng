@@ -1,0 +1,261 @@
+.about {
+    box-sizing: border-box;
+    
+    padding: 2%;
+    width: 100%;
+    margin: 0%;
+   padding-top: 20px;
+    display: block;
+    
+    background: #F0FAFE;
+    
+    }
+
+    .about-heading {
+        /* How it works? */
+        width: 129px;
+        height: 36px;
+        background: #262c710d;
+        padding: 1%;
+        border-radius: 10px;
+        
+        /* Header/3 */
+        
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        /* identical to box height; 
+        or 36px */
+        
+        
+        /* primary/blue */
+        
+        color: #262C71;
+    
+    margin: auto;
+    
+    
+      }
+
+    .App-about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 600px;
+        width: 80%;
+        margin-top: 10%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 2%;
+    }
+
+    @media (min-width: 1005px) and (max-width: 1124px) {
+
+        .App-about {
+            width: 90%;
+        }
+        
+        .App-about-text {
+            min-height: 530px;
+            display: block;
+            max-width: 350px;
+           
+              
+            }
+
+            .App-about-image {
+                
+                 width: '220px'; 
+                 height: '220px'; 
+                
+             }
+            
+         
+         
+    }
+    
+  
+    @media (max-width: 1005px) {
+        .App-about { 
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            
+            
+        }
+
+        .App-about-text {
+           
+            margin: auto;
+           
+        }
+
+        .App-about-text p {
+           
+            text-align: left;
+            min-width: 300px;
+        }
+
+    .App-about-image {
+       
+            margin: auto;
+            
+    }
+
+    }
+    
+    
+    .App-about-text {
+    min-height: 530px;
+    display: block;
+    max-width: 400px;
+      
+      text-align: left;
+      display: block;
+     
+      margin: auto;
+      
+    
+      
+    }
+
+    @media (min-width: 650px) {
+   
+        .App-about-image-mobile {
+           display: none;
+           
+        }
+    }
+
+
+    @media (max-width: 650px) {
+
+       .about {
+        padding-top: 15vw;
+       } 
+   
+    .App-about-image {
+       display: none;
+        width: '250px'; 
+        height: '250px'; 
+       
+    }
+
+    .App-about-mini {
+       
+        width: '135px'; 
+        height: '135px'; 
+       
+        top: '80px'; 
+        bottom: '0px'; 
+        margin: 'auto'
+    }
+
+    .App-about-img {
+       
+        width: '141px'; 
+        height: '191px'; 
+        top: '-61px'; 
+        left: '-3px'; 
+        bottom: '0px'; 
+        margin: 'auto'
+    }
+    .App-about-text {
+        min-height: 530px;
+       
+        max-width: 350px;
+    }
+   
+}
+    
+    .App-about-text h3 {
+      
+        width: 302px;
+        height: 96px;
+        
+       
+        text-align: left;
+        /* primary/black */
+        
+        color: #161924;
+    
+    }
+    
+    h3 .h-red {
+      color: red;
+    }
+    
+    .App-about-text p{
+       
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: left;
+    
+    /* black/shade 1 */
+    
+    color: #121212;
+    
+    }
+    
+    .App-about-text button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 32px;
+        gap: 10px;
+        margin: 40px 0px;
+        width: 172px;
+        height: 44px;
+        
+        /* primary/red */
+        
+        background: #DC2326;
+        border-radius: 8px;
+    
+    }
+    
+    .App-about-text a {
+      text-decoration: none;
+      width: fit-content;
+    height: 24px;
+    margin: auto;
+    /* button text */
+    padding: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height; 
+    or 24px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* white/shade 1 */
+    
+    color: #FFFFFF;
+    }
+    
+
+
+    .App-about p {
+        color: #000000;
+        padding-top: 3vw;
+        font-size: 20px;
+      }
+   
+  
+   
+      
+  

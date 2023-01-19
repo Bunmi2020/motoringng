@@ -1,0 +1,426 @@
+
+  .App-banner {
+    box-sizing: border-box;
+    margin: auto;
+   
+    width: 100%;
+    min-height: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg, #e2eaee, #F0FAFE), url(../media/image/banner.png);
+    justify-content: space-around;
+    border-radius: 40px;
+    
+    }
+
+    
+    @media (max-width: 375px) {
+      .App-hero .App-hero-hang { 
+        width: 255px;
+        height: 263.02px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      
+    .App-hero-hang .App-hero-right {
+      display: flex;
+      flex-direction: row;
+      padding-right: 6%;
+      margin: auto;
+    }
+    }
+
+
+
+    @media (max-width: 650px) {
+     
+      .App-banner {
+        display: block;
+        margin: auto;
+        left: 0%;
+        right: 0%;
+       margin-top: 15vw;
+       background-image: none;
+       max-height: 775px;
+      }
+
+      .App-banner  .App-banner-body {
+        display: block;
+        margin-top: 15vw;
+      }
+      .App-hero-text-container .App-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        width: 283px;
+        left: calc(50% - 283px/2);
+        margin: auto;
+        bottom: 42.55%;
+        
+        }
+
+        .App-banner-body .App-hero-text-container {
+          
+          box-sizing: border-box;
+
+          left: 6.4%;
+          right: 6.4%;
+          top: 2.9%;
+          bottom: 92.69%;
+        background-image: linear-gradient(180deg, #e2eaee, #F0FAFE);
+        border-radius: 16px;
+        
+        }
+
+        .App-hero-text h3 {
+          width: 270px;
+          height: 68px;
+          padding: 0px 10px;
+          margin-bottom: 0%;
+        }
+
+        .App-hero-text p {
+          padding: 0px 10px;
+          margin: 0%;
+          width: 283px;
+        }
+        .App-hero-text button {
+          margin: 1%;
+          margin-bottom: 2%;
+        }
+
+        .App-hero .motor {
+          width: 240px;
+          max-height: 233.02px;
+          margin: 30px 0px;
+          margin-right: 7%;
+          margin-left: auto;
+          
+        }
+
+          .App-hero {
+          width: 275px;
+         
+          
+        }
+
+        .App-hero-hang { 
+          width: 275px;
+          height: 263.02px;
+          margin: 0px;
+          
+        }
+
+    }
+
+    @media (max-width: 950px) {
+      
+
+
+      .App-banner  .App-banner-body {
+       display: flex;
+      
+       padding: auto;
+       margin: auto;
+       width: 100%;
+     }
+
+     .App-hero, .App-hero-text-container {
+      margin: auto;
+    }
+
+   }
+
+   
+
+
+    .App-hero {
+      min-width: 275px;
+      min-height: 263.91px;
+      max-width: 27vw;
+      max-height: 440.91px;
+     
+      /* Inside auto layout */
+
+    }
+  
+    
+    .App-hero .motor {
+      min-width: 240px;
+      max-width: 25vw;
+    box-shadow: 30px 20px #b9c0be;
+    top: 0px;
+    
+    border-radius: 16px;
+    
+    }
+
+    .App-hero-text {
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      min-height: 252px;
+      max-width: 35vw;
+      max-height: fit-content; 
+      
+    }
+
+   
+  
+    
+    .App-hero-text h3 {
+        
+      
+      min-height: 96px;
+      max-width: 34vw;
+      min-width: 300px;
+       margin-bottom: 0%;
+      /* Header/2 */
+      
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      /* or 48px */
+      
+      text-align: left;
+      /* primary/black */
+      
+      color: #161924;
+  
+  }
+    
+    h3 .h-red {
+      color: red;
+    }
+    
+   
+    .App-hero-text  p{
+      
+      max-width: 25vw;
+      min-width: 250px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      /* or 24px */
+      text-align: left;
+      
+      /* black/shade 1 */
+      
+      color: #121212;
+    
+    }
+    
+    .App-hero-text button {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    
+    width: 132px;
+    height: 44px;
+    
+    /* primary/red */
+    
+    background: #DC2326;
+    border-radius: 8px;
+    
+    
+    }
+    
+    .App-hero-text a {
+      text-decoration: none;
+      width: 68px;
+    height: 24px;
+    
+    /* button text */
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* white/shade 1 */
+    
+    color: #FFFFFF;
+    }
+  
+    .App-banner-body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0px;
+      gap: 4vw;
+      max-width: 90%;
+      position: relative;
+      min-height: 440.91px;
+      padding: 10px;
+    }
+
+    .App-hero-hang {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      z-index: 6;
+      min-width: 20vw;
+      max-width: 220px;
+
+    }
+
+    .App-hero-hang .App-hero1,   .App-hero-hang .App-hero2,   .App-hero-hang .App-hero3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px 8px;
+      gap: 8px;
+
+      position: absolute;
+      width: 160px;
+      height: 52px;
+
+      /* white/shade 1 */
+
+      background: #FFFFFF;
+      border: 1px solid rgba(140, 104, 205, 0.25);
+      /* shadow */
+
+      box-shadow: 0px 1px 4px rgba(20, 28, 31, 0.02), 0px 8px 12px rgba(20, 28, 31, 0.08);
+      border-radius: 16px;
+    }
+
+    .App-hero-hang .hero-m {
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+    }
+
+    .App-hero .hero-m img {
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      padding: 1%;
+    }
+
+    
+
+    .App-hero .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      margin: 0%;
+      text-align: left;
+      width: 104px;
+      max-height: 44px;
+      gap: 0px;
+    }
+
+    .App-hero .hero-text p {
+      width: 104px;
+      max-height: 18px;
+      padding: 0%;
+      margin: 0%;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 6px;
+      line-height: 150%;
+      /* or 9px */
+
+
+      /* Greys/Beau */
+
+      color: #C2D0D6;
+
+
+    }
+
+    .App-hero .hero-text h5 {
+      max-width: 90px;
+      height: 26px;
+      padding: 0%;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 26px;
+      /* identical to box height, or 256% */
+      margin: 0%;
+
+    }
+    
+    
+    
+    .App-link {
+      color: #61dafb;
+    }
+
+    
+
+    .App-hero-hang .App-hero-right {
+      display: flex;
+      flex-direction: row;
+      margin-right: 31%;
+      margin-left: auto;
+      margin-top: 10%;
+    }
+
+    .App-hero-right .App-hero3 {
+     
+      margin-top: 90%;
+     
+      
+    }
+
+    .App-hero-hang .App-hero2 {
+      margin-top: 47%;
+      margin-left: -60%;
+     
+    }
+
+
+    @media (min-width: 1150px) {
+      .App-hero-hang .App-hero-right {
+        
+        margin-right: 5%;
+        margin-left: auto;
+        
+      }
+  
+      .App-hero-right .App-hero3 {
+       
+        margin-top: 90%;
+       
+        
+      }
+  
+      .App-hero-hang .App-hero2 {
+        margin-top: 47%;
+        margin-left: -70%;
+       
+      }
+    }
