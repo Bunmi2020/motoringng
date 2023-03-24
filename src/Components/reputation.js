@@ -5,6 +5,7 @@ import trust2 from '../media/image/trust2.png';
 import trust3 from '../media/image/trust3.png';
 import trust4 from '../media/image/trust4.png';
 import trust5 from '../media/image/trust5.png';
+import Rating from './ratings';
 
 import './reputation.css'
 
@@ -45,8 +46,10 @@ const Reputation = () => {
             </div>
 
             <div className='testimonial'>
-
+                <Rating />
             </div>
+
+           
     </div>
   )
         

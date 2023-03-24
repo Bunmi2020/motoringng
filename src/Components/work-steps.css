@@ -1,11 +1,11 @@
 
-  .services-icon, .services-header, .services-text {
-    
-    padding: auto;
-    padding-bottom: 10%;
-    margin: auto;
-    
-  }
+
+.work-steps-container {
+  width: 100%;
+  background: #F0FAFE;
+  padding: 10px 0px;
+}
+  
 
   .work-steps {
     width: 80%;
@@ -68,6 +68,7 @@ margin-top: 0%;
 
   .services-text {
     width: 70%;
+    margin: auto;
   }
 
   .work-steps-body {

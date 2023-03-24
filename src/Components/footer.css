@@ -1,80 +1,66 @@
 .footer {
     display: flex;
-flex-direction: column;
-align-items: center;
-padding: 48px 0px 0px 0px;
-gap: 24px;
-margin: auto;
-justify-content: center;
-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 24px;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    color: #e0dcdc;
+    opacity: 0.9;
+    /* primary/blue */
 
-opacity: 0.9;
-/* primary/blue */
-
-background: #262C71;
+    background: #262C71;
 
 }
 
-.footer-menu Link, .footer-menu a {
+.footer-company li, .footer-services li {
+    line-height: 2.6;
+}
+
+.contact-add li {
+    line-height: 1.6;
+}
+
+ .footer a {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
 }
 
-.footer-conclusion {
-    display: flex;
-flex-direction: column;
-align-items: center;
-padding: auto;
-gap: 32px;
-margin-bottom: 5%;
-width: 80%;
-min-height: 95.85px;
-
-
+i {
+    padding-right: 15px;
 }
 
-.footer-conclusion p {
+
+.footer-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    
+}
+
+
+    .footer-services, .footer-company, .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+        text-align: left;
+        max-width: 350px;
+        min-width: 250px;
+        padding: 20px;
+    }
+    
    
 
-
-text-align: center;
-
-/* white/shade 1 */
-
-color: #FFFFFF;
+.footer-contact .icon {
+    align-items: flex-start;
 }
-
- 
-    .footer-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 44px;
-        flex-wrap: wrap;
-        width: 80%;
-        
-        list-style: none;
-        position: relative;
-     
-    }
-
-    .footer-menu li {
-        
-height: 26px;
-
-width: 94px;
-
-display: flex;
-align-items: center;
-
-/* Whites/plain white */
-
-color: #FFFFFF;
-
-    }
 
 
     .divider {
@@ -90,27 +76,12 @@ margin: auto;
 
     }
 
-    .footer-socials {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 0px;
-        flex-wrap: wrap;
-        width: 80%;
-        gap: 30px;
-        padding: 24px 0px;
-
-
-    }
 
     .copyrights {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         width: 290px;
-        height: 26px;
-
         gap: 24px;
         padding: 0px;
 
@@ -139,28 +110,6 @@ height: 24px;
     .socials img {
         width: 24px;
         height: 24px;
-    }
-
-    .footer-phrase {
-display: block;
-align-items: center;
-padding: 24px 0px;
-margin: auto;
-
-height: 74px;
-
-
-    }
-
-    .footer-phrase p {
-        width: 212px;
-height: 26px;
-
-
-/* identical to box height, or 160% */
-
-
-color: #ffffff99;
     }
 
     

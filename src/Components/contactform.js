@@ -10,18 +10,20 @@ function ContactForm() {
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+  const [phone1, setPhone1] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [pickup, setPickup] = useState('');
+  const [dropoff, setDropoff] = useState('');
 
   const form = useRef();
   const onSubmit = (e) => {
     e.preventDefault();
     setStatus("Sending Message...");
     emailjs.sendForm(
-      'motoring_ng',
-      'template_s06xy9o',
+      'contact_mn',
+      'template_ty8ygl7',
       form.current,
-      '97Kt0dDtwkTRLs_Lc'
+      '_wqVnLtDh3UrbmBnU'
     ).then((response) => {
       console.log(response.status, response.text);
       setStatus(status);
@@ -32,8 +34,11 @@ function ContactForm() {
       
     setName('');
     setPhone('');
+    setPhone1('');
+    setPickup('');
     setEmail('');
-    setMessage('');
+    setDropoff('');
+    setPickup('');
     })
     .catch((err) => {
       console.log(err.text);
@@ -49,33 +54,60 @@ function ContactForm() {
 
   return (
     <form ref={form} onSubmit={onSubmit}>
+    <head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
       <label className='label'>
         Name:
         <br />
-        <input className='input' name="name" type="text" value={name} onChange={(event) => setName(event.target.value)} required placeholder='Enter your name' pattern="[^\s][A-zÁ-ž\s]{1,}" title='Name must be more than one alphabet'/> {/*can not start with space but can include space*/}
+        <i className='fa fa-user icon'></i>
+        <input className='input' name="name" placeholder='Enter your name' type="text" value={name} onChange={(event) => setName(event.target.value)} required pattern="[^\s][A-zÁ-ž\s]{1,}" title='Name must be more than one alphabet'/> {/*can not start with space but can include space*/}
         <span className='validity'></span>
       </label>
        <br />
       <label className='label'>
         Email:
         <br />
-        <input className='input' name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} required pattern ='[a-z0-9._%+-]+@[a-z0-9.-+]+\.' placeholder='Enter your email address' />
+        <i className='fa fa-envelope icon'></i>
+        <input className='input' name="email" placeholder='Enter your email' type="email" value={email} onChange={(event) => setEmail(event.target.value)} required pattern ='[a-z0-9._%+-]+@[a-z0-9.-+]+\.' />
         <span className='validity'></span> 
       </label>
       <br />
+      
       <label className='label'>
-        Phone no:
+        Pick up location:
+       
+      <br />
+        <i className='fa fa-map-marker icon'></i>
+        <input className='input' type="text" name="pickup" id="pickup" value={pickup}  onChange={(event) => setPickup(event.target.value)} required placeholder='Enter Pick up location' pattern="[^\s][A-zÁ-ž\s]{1,}" title='Name must be more than one alphabet'/> {/*can not start with space but can include space*/}
+        <span className='validity'></span>
+      </label> 
+      <br />
+        <label className='label'>
+        Pick up Phone no:
         <br />
-        <PhoneInput className='input' name="phone" international="true" defaultCountry="NG" type="tel" value={phone} onChange={setPhone} placeholder='Enter Phone number'  pattern ="[0-9\s._%+-]{17,18}" autoComplete='off' title='must include country code and be complete' space='off' required/>
+        <PhoneInput className='input' name="phone" defaultCountry="NG" type="tel" value={phone} onChange={setPhone} placeholder='Enter Phone number'  pattern ="[0-9\s._%+-]{11,14}" autoComplete='off' title='Must be 11 digits without country code' space='off' required/>
+        <span className='validity'></span>
+      </label>
+       <br />
+       <label className='label'>
+        Drop off location:
+        <br />
+        <i className='fa fa-map-marker icon'></i>
+        <input className='input' type="dropoff" name="dropoff" id="dropoff" value={dropoff} onChange={(event) => setDropoff(event.target.value)} required placeholder='Enter drop off location' pattern="[^\s][A-zÁ-ž\s]{1,}" title='Name must be more than one alphabet'/> {/*can not start with space but can include space*/}
+        <span className='validity'></span>
+      </label>
+      
+      <br />
+      <label className='label'>
+      Drop off Phone no:
+        <br />
+        <PhoneInput className='input' name="phone1" defaultCountry="NG" type="tel" value={phone1} onChange={setPhone1} placeholder='Enter Phone number'  pattern ="[0-9\s._%+-]{11,14}" autoComplete='off' title='Must be 11 digits without country code' space='off' required/>
         <span className='validity'></span>
       </label>
      
-      <br />
-      <label className='label-text'>
-        Message:
-        <br />
-        <textarea className='input-text' name="message" value={message} onChange={(event) => setMessage(event.target.value)} pattern="([A-z0-9]+[A-z0-9À-ž ]+){5,}" required placeholder='Type your message here...'/>
-      </label>
       <br />
       <button className='button-submit' type="submit" style={{cursor: (sentNotification === 'Message Sent, we would get back to you')? 'not-allowed' : 'pointer', background: (sentNotification === 'Message Sent, we would get back to you')? '#e7e8f7' : '#262C71'}}>{status}</button>
       <br />

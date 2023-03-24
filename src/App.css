@@ -3,10 +3,10 @@
   display: block;
 }
 
-
-@media (max-width: 650px) {
-  
+*{
+  font-family: 'DM Sans';
 }
+
 
 p {
   /* Body/Regular */

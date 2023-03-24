@@ -66,7 +66,7 @@ function Header () {
               <div className='desktop-menu'>  
                 <li><Link to="#work-steps">How it works</Link></li>
                 <li><Link to="#about">About</Link></li>
-                <li><Link to="#reputation">Testimonial</Link></li>
+                <li><Link to="#reputation">Testimonials</Link></li>
                 <li><Link to="#contact">Contact</Link></li>
             
               </div>
@@ -82,7 +82,7 @@ function Header () {
                         id="menu"> 
                 <li><Link to="#work-steps">How it works</Link></li>
                 <li><Link to="#about">About</Link></li>
-                <li><Link to="#reputation">Testimonial</Link></li>
+                <li><Link to="#reputation">Testimonials</Link></li>
                 <li><Link to="#contact">Contact</Link></li>
                 
         </div>

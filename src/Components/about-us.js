@@ -1,7 +1,8 @@
 import React from 'react';
-import about from '../media/image/about-main.png'
+import about from '../media/image/about-main.png';
+import { Link } from 'react-router-dom';
 
-import './about-us.css'
+import './about-us.css';
 
 const About = () => {
     
@@ -17,8 +18,12 @@ const About = () => {
             <div className="App-about-text">
 
                 <h3>Towing your vehicle<br/> just <span className='h-red'>got easier</span></h3>
-                <p>Motoring Nigeria offers the best services when it comes to towing vehicles. We pride ourselves on efficient and timely service delivery. And our charges have proven to be the best when compared to our competitors, in terms of quality of service and cost. We haul and deliver vehicles locally and interstate! We also rescue vehicles across Lagos! </p>
-                <button><a href="tel:+2347037980096" >Call Us Now</a></button>
+                <p>Motoring Nigeria is a company committed to providing a broad spectrum of automotive related
+solutions to our individual and corporate customers. We have gradually gathered industry
+expertise since 2014 and served our customers in the areas of vehicle roadside assistance, long
+distance vehicle haulage/towing, vehicle sales, auctions and automotive events. Our renewed commitment in 2023 is to continue to provide tailored solutions to our customers and exceed
+their expectations with impeccable customer service.</p>
+                <button><Link to="#contact">Tow Now</Link></button>
                 
             </div>
             

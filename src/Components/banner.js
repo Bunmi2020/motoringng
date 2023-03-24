@@ -16,9 +16,9 @@ function Banner () {
 
               <div className="App-hero-text">
                     <h3>Tow your vehicle <br/><span className='h-red'>easily and fast</span></h3>
-                    <p>Our response time is second to none if you trust us.
-                        So have your vehicle towed in minutes.</p>
-                    <button><a href="tel:+2347037980096" >Tow Now</a></button>
+                    <p>Towing Your Vehicle Just Got Simpler!
+                        Vehicle breakdowns are exhausting, getting towed is easy. We will arrive in 15-30 minutes.</p>
+                    <button><a href="tel:+2349166859614" >Tow Now</a></button>
                     
               </div>
             </div>

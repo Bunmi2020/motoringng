@@ -8,7 +8,7 @@ import './work-steps.css'
 const Steps = () => {
     
   return (
-    
+    <div className='work-steps-container' id='work-steps'>
     <div className='work-steps' id='work-steps'>
      <h3 >How it works</h3>
 
@@ -24,7 +24,7 @@ const Steps = () => {
         
         <img src={step2} alt='towing vehicle' className='services-icon'/>
           <h5 style={{backgroundColor: '#d3c6cc', borderRadius: '360px', color: '#DE5C9D'}} className='services-header'>02</h5>
-          <p className='services-text'>Nearest Motoring Nigeria picks up your request.</p>
+          <p className='services-text'>Nearest Motoring Nigeria' truck picks up your request.</p>
         </div>
 
         <div className='step3'>
@@ -36,6 +36,7 @@ const Steps = () => {
         </div>
       </div>
         
+    </div>
     </div>
   )
         

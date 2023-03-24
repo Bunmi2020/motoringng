@@ -1,4 +1,4 @@
-
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import About from './Components/about-us';
@@ -11,23 +11,39 @@ import Reputation from './Components/reputation';
 import Steps from './Components/work-steps';
 
 function Home () {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const shouldShowButton = window.pageYOffset < 200; // change this number as needed
+      setIsVisible(shouldShowButton);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  
+
   return ( 
-    <div className="App">
+    <div id= "app" className="App">
       
-        <div className="up-cursor"><Link to="#home"><img src={up} alt='top' style={{ width: '35px',  position: 'fixed', zIndex: 9, boxShadow: '3px, 2px, gray',
+        <div className="up-cursor" id='myBtn'><Link to="#home"><img src={up} alt='top' style={{ width: '35px', display: isVisible ? 'none' : 'block', position: 'fixed', zIndex: 9, boxShadow: '3px, 2px, gray',
         bottom: '0%',
-        display: 'flex',
-        right: '2%',
-        
-        padding: '1.5vh 3.5vh'}}/></Link>
+        right: '0%',
+       
+        padding: '1.5vh 2.5vh'}}/></Link>
       </div>
       
       <Header />
-      
+      <Contact id='contact'/>
       <Steps id='work-steps'/>
       <About id='about'/>
       <Reputation id='reputation'/>
-      <Contact id='contact'/>
+     
       <Footer id='footer'/>
 
     </div>
